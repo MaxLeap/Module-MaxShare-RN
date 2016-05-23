@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RNSocialShare</string>
+
+    <!--<string name="ml_sina_weibo_app_id">3028332608</string>-->
+    <string name="ml_sina_weibo_app_id">2045436852</string>
+    <string name="qq_app_id">tencent222222</string>
+    <string name="ml_qq_app_id">222222</string>
+    <string name="ml_wechat_app_id">wx86c4732c585fd301</string>
+    <string name="ml_wechat_app_secret">765531e86103839af99012b82c5fd865</string>
+</resources>
