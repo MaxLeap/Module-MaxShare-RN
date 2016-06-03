@@ -4,3 +4,9 @@ include ':app'
 
 include 'sdk'
 project(':sdk').projectDir = new File("../../android/app")
+
+
+include ':weiboSDK'
+project(":weiboSDK").projectDir = new File("weiboSDK")
+
+println new File("weiboSDK").getAbsolutePath()

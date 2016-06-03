@@ -13,12 +13,8 @@ import com.maxleap.social.EventListener;
 import com.maxleap.social.HermsException;
 import com.maxleap.social.MLHermes;
 import com.maxleap.social.thirdparty.param.ShareItem;
-import com.maxleap.social.ui.BottomSheetAdapter;
-import com.maxleap.social.ui.BottomSheetItem;
-import com.maxleap.social.ui.ShareSheetDialogFragment;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -48,6 +44,7 @@ public class MLSocialShareNativeModule extends ReactContextBaseJavaModule {
         ShareItem shareItem = ShareItem.newBuilder()
                 .text(optString(map, "title"))
                 .description(optString(map, "detail"))
+                .actionUrl(optString(map, "actionUrl"))
                 .createShareItem();
 
         MLHermes.showShareDialog(fragmentActivity,
