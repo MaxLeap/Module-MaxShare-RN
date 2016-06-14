@@ -2,8 +2,6 @@
 
 import ReactNative, { NativeModules } from 'react-native';
 
-const MaxSocialShare = NativeModules.MaxSocialShare;
-
 /**
 @param item
 {
@@ -20,7 +18,7 @@ const MaxSocialShare = NativeModules.MaxSocialShare;
 }
 */
 async function share(item) {
-  return await MaxSocialShare.share(item);
+  return await NativeModules.MaxSocialShare.share(item);
 }
 
 export default share;
