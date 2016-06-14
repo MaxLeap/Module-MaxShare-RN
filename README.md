@@ -25,7 +25,7 @@
     ```groovy
     repositories {
         flatDir{
-            dirs '../../node_modules/maxleap-socialshare-react-native/dist/android'
+            dirs '../../node_modules/maxshare-react-native/dist/android'
         }
     }
     ```
@@ -34,7 +34,7 @@
 
     ```groovy
     dependencies {
-        compile(name:'maxleap-socialshare-react-native', ext:'aar')
+        compile(name:'maxshare-react-native', ext:'aar')
     }
     ```
 
@@ -60,7 +60,7 @@
 
 ### `share([object])`
 
-只接受一个参数，类型为 `object`。 
+只接受一个参数，类型为 `object`。
 返回一个 promise 对象，如果成功调用了第三方平台的分享接口，返回改平台的 ID
 
 
@@ -74,7 +74,7 @@
 **`webpageURL`**			| `string` | 一个网页链接地址
 **`previewImagePath`**	| `string` | 预览图片路径，本地文件路径
 **`attachmentURL`**		| `string` | 附件链接地址
-**`latitude`**			| `number` | 纬度 
+**`latitude`**			| `number` | 纬度
 **`longitude`**			| `number` | 经度
 **`rect`**				| `object` | {x: 120, y: 30, width: 20, height: 30}<br>触发分享操作的按钮**在屏幕中的位置**，iPad 上有效，用来在按钮附近以 popover 的形式显示分享界面
 
@@ -95,7 +95,7 @@ import share from 'maxshare-react-native';
 		// for iPad
 		rect: {x: 120, y: 30, width: 20, height: 30}
 	}
-	
+
 	share(textItem).then(platform => {
 	  alert('share text via platform: ' + platform)
 	})
@@ -113,12 +113,12 @@ import share from 'maxshare-react-native';
 		// for iPad
 		rect: {x: 120, y: 30, width: 20, height: 30}
 	}
-	
+
 	share(imgItem).then(platform => {
 	  alert('share an image via platform: ' + platform)
 	})
 	```
-	
+
 - 分享网页
 
 	```js
@@ -131,7 +131,7 @@ import share from 'maxshare-react-native';
 		// for iPad
 		rect: {x: 120, y: 30, width: 20, height: 30}
 	}
-	
+
 	share(webItem).then(platform => {
 	  alert('share a webpage via platform: ' + platform)
 	})
@@ -150,12 +150,12 @@ import share from 'maxshare-react-native';
 		// for iPad
 		rect: {x: 120, y: 30, width: 20, height: 30}
 	}
-	
+
 	share(musicItem).then(platform => {
 	  alert('share a music via platform: ' + platform)
 	})
 	```
-	
+
 - 分享视频
 
 	```js
@@ -169,9 +169,8 @@ import share from 'maxshare-react-native';
 		// for iPad
 		rect: {x: 120, y: 30, width: 20, height: 30}
 	}
-	
+
 	share(videoItem).then(platform => {
 	  alert('share a video via platform: ' + platform)
 	})
 	```
-	
