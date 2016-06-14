@@ -1,4 +1,4 @@
-# Module-MaxShare-RN
+# Module-MaxShare-RN [![npm version](https://badge.fury.io/js/maxshare-react-native.svg)](http://badge.fury.io/js/maxshare-react-native)
 
 ## 集成 SDK
 
