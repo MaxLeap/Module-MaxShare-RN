@@ -14,7 +14,13 @@
 
 3. 打开 Finder，找到本项目的根目录，使用 Xcode 打开 iOS 工程（双击 .xcodeproj 文件即可），然后导航到 `/node_modules/maxshare-react-native/ios/lib` 目录，把该目录下的 frameworks 都拖到 Xcode 工程中
 
-4. **重要：**此外还需要在 Xcode 中配置各社交平台分享环境，请参阅[MaxLeap 社交分享文档](https://maxleap.cn/s/web/zh_cn/guide/devguide/ios.html#社交分享)
+4. 添加 Framework Search Paths
+
+	在 Xcode 中，导航到 Targets -> YourAppName -> "Build Settings"，找到 “Framework Search Paths” 一项，添加下面这个路径：
+	
+	`$(SRCROOT)/../node_modules/maxshare-react-native/ios/lib`
+
+5. **重要：**此外还需要在 Xcode 中配置各社交平台分享环境，请参阅[MaxLeap 社交分享文档](https://maxleap.cn/s/web/zh_cn/guide/devguide/ios.html#社交分享)
 
 ### 集成 Android 环境
 
